@@ -14,62 +14,59 @@
   text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 30vh;
+/* --------------Headers and HEROES--------------- */
+header{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+ 
+  justify-content:space-between;
+  min-height: 6rem;
+  font-size: 1.5rem;
   color: white;
-  border-radius: 20px 8px 8px 20px;
-  margin: 0rem 3rem;
-
   background-image: url('./herobeer.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: center;
+  flex-wrap: wrap;
+  
 }
 
-.Nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: right;
-}
-
-hero {
+.loginBanner {
   display: flex;
   flex-direction: row;
-  place-items: flex-end;
-  justify-items: flex-end;
-  align-items: flex-end;
-  align-items: center;
+  justify-content:space-between;
+  margin: 01.5rem;
+}
+
+.loginBanner>form>label {
+  margin-right: 1rem;
 }
 
 h1 {
-  font-size: 15vh;
+
+  text-align: center;
+  font-size: 10vh;
+  margin: 3rem 0rem 3rem 7rem;
+  flex-wrap:nowrap;
+
+  
 }
 
+
+/* --------------BUTTON BAR ----FEATURE AND MAIN--------------- */
 .ButtonBar {
   background-color: rgba(240, 248, 255, 0.294);
   display: flex;
   flex-direction: row;
-  height: 60px;
-  place-items: center;
-  justify-items: center;
+  height: 4rem;
+  /* place-items: center; */
   align-items: center;
   justify-content: space-between;
   padding: 0rem 20rem;
 }
 
-h2 {
+.randomBeer {
+  overflow-y: scroll;
   border-radius: 20px 8px 8px 20px;
   margin: 2rem 3rem;
   background-image: url('./confetti.gif');
@@ -85,16 +82,20 @@ h2 {
   color: #f5d300;
   padding: 2rem;
 }
-
+.overflow{
+ max-height:initial;
+  overflow-y: scroll;
+ 
+}
 .MainField {
   background-color: rgba(240, 248, 255, 0.294);
   border-radius: 20px 8px 8px 20px;
   margin: 2rem 3rem;
   display: flex;
-  height: 100%;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 2rem;
+  
 }
 
 /* ---------------- ELEMENTS ----------------------*/
@@ -138,11 +139,14 @@ button:hover {
 
 /* ------------------Cards--------------------- */
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.555);
+  background-color: rgba(255, 228, 196, 0.342);
   transition: 0.3s;
   width: 20%;
-  justify-content: space-between
-  
+  justify-content: space-between;
+  border-radius: 20px 8px 8px 20px;
+  border-radius: 8px;
+  margin: 1rem;
 }
 
 .resize {

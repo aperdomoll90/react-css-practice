@@ -19,7 +19,7 @@ function Main() {
 
   return (
     <section className="Main">
-      <nav className="ButtonBar">
+      <div className="ButtonBar">
         <button onClick={() => setType('ale')}>ale</button>
         <button onClick={() => setType('stouts')}>stouts</button>
         <button onClick={() => setType('red-ale')}>red-ale</button>
@@ -27,10 +27,12 @@ function Main() {
           <p>Let your Name Choose a Beer</p>
           <button onClick={() => chooseRandomBeer()}>Choose for me</button>
         </div>
-      </nav>
+        
+      </div>
 
-      <section>{randomBeer && <h2>{randomBeer}</h2>}</section>
-
+      
+<div className="overflow">
+{randomBeer && <section className="randomBeer"><p>{randomBeer}</p></section>}
       <section className="MainField">
         {!beerList ? (
           <p>Pouring...</p>
@@ -40,7 +42,7 @@ function Main() {
     
               <div class="card">
                 <img
-                  src="https://img.lovepik.com/element/40030/1024.png_300.png"
+                  src="http://www.pngpix.com/wp-content/uploads/2016/08/PNGPIX-COM-Beer-Glass-PNG-Transparent-Image.png"
                   alt="Beer mug"
                   className="resize"
                 />
@@ -55,6 +57,7 @@ function Main() {
           })
         )}
       </section>
+      </div>
     </section>
   );
 }
