@@ -55,7 +55,8 @@ h1 {
 
 /* --------------BUTTON BAR ----FEATURE AND MAIN--------------- */
 .ButtonBar {
-  background-color: rgba(240, 248, 255, 0.294);
+  background-color:rgba(240, 248, 255, 0.294);
+  border-radius: 20px 8px 8px 20px;
   display: flex;
   flex-direction: row;
   height: 4rem;
@@ -82,12 +83,8 @@ h1 {
   color: #f5d300;
   padding: 2rem;
 }
-.overflow{
- max-height:initial;
-  overflow-y: scroll;
- 
-}
-.MainField {
+
+.MainField{
   background-color: rgba(240, 248, 255, 0.294);
   border-radius: 20px 8px 8px 20px;
   margin: 2rem 3rem;
@@ -95,8 +92,22 @@ h1 {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 2rem;
+   max-height: 10rem;
+  
+ }
+.overflow {
+  background-color: rgba(240, 248, 255, 0.294);
+  border-radius: 20px 8px 8px 20px;
+  margin: 0.1rem 0.1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem;
+
+  overflow-y: scroll;
   
 }
+
 
 /* ---------------- ELEMENTS ----------------------*/
 button {
@@ -155,7 +166,7 @@ button:hover {
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.815);
 }
 
 .container {

@@ -31,15 +31,14 @@ function Main() {
       </div>
 
       
-<div className="overflow">
+<div className="MainField">
 {randomBeer && <section className="randomBeer"><p>{randomBeer}</p></section>}
-      <section className="MainField">
+      <section className="overflow">
         {!beerList ? (
           <p>Pouring...</p>
         ) : (
           beerList.map((beer) => {
             return (
-    
               <div class="card">
                 <img
                   src="http://www.pngpix.com/wp-content/uploads/2016/08/PNGPIX-COM-Beer-Glass-PNG-Transparent-Image.png"
@@ -55,7 +54,9 @@ function Main() {
               </div>
             );
           })
-        )}
+
+        )
+        }
       </section>
       </div>
     </section>
